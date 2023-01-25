@@ -1,0 +1,13 @@
+body{
+    background-color:coral;
+    color:rgb(145, 76, 76);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+    .a2{
+        background-color: palevioletred;
+    }
+.blue{
+    color: blue;
+    background-color: yellow;
+}

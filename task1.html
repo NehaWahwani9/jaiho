@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build a Survey Form using HTML and CSS</title>
+
+    <style>
+      /* Styling the Body element i.e. Color,
+		Font, Alignment */
+      body {
+        background-color: rgb(178, 226, 223);
+        font-family: Verdana;
+        text-align: center;
+        background-image: url("/images/n4.jpg");
+        background-size: cover;
+        height: 100%;
+        background-repeat: no-repeat;
+        
+      }
+      .bg {
+  /* The image used */
+  background-image: url("/images/n4.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+      h1{
+        background-color:rgb(219, 207, 33);
+        text-shadow: 0mm;
+      }
+      p{
+        color: aliceblue;
+      }
+
+      /* Styling the Form (Color, Padding, Shadow) */
+      form {
+        background-color: rgb(212, 129, 212);
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 30px 20px;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      /* Styling form-control Class */
+      .form-control {
+        text-align: left;
+        margin-bottom: 25px;
+      }
+
+      /* Styling form-control Label */
+      .form-control label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      /* Styling form-control input,
+		select, textarea */
+      .form-control input,
+      .form-control select,
+      .form-control textarea {
+        border: 1px solid #777;
+        border-radius: 2px;
+        font-family: inherit;
+        padding: 10px;
+        display: block;
+        width: 95%;
+      }
+
+      button {
+        background-color: rgb(10, 178, 201);
+        border: 1px solid #777;
+        border-radius: 2px;
+        font-family: inherit;
+        font-size: 21px;
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+      }
+      table{
+        border-collapse: collapse;
+        width: 50%;
+        margin: 50px auto;
+        background-color: burlywood;
+      }
+      table,th,td{
+        border: 2px solid black;
+        padding: 5px;
+      }
+      th{
+        font-size: 30px;
+        font-weight: 700;
+        font-family: Arial;
+        color: blue;
+      }
+      td{
+        font-size: 25px;
+        color: crimson;
+        font-weight: 400;
+        font-family: Georgia;
+
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1><b>Survey Form</b></h1>
+    <p style="font-size:50px;"><b>WELCOME TO OUR WEBSITE</b></p>
+
+    <form id="displayDetails">
+      <div class="form-control">
+        <label for="Fname"> Fname </label>
+        <input type="text" id="Fname" placeholder="Enter your firstname" />
+      </div>
+
+      <form id="form">
+        <div class="form-control">
+          <label for="Lname"> Lname </label>
+          <input type="text" id="Lname" placeholder="Enter your lastname" />
+        </div>
+
+      <div class="form-control">
+        <label for="email"> Email </label>
+        <input type="email" id="email" placeholder="Enter your email" />
+      </div>
+
+      <div class="form-control">
+          <label for="Number"> Phone Number </label>
+        <input type="tel" 
+        placeholder="Enter your Phone Number"
+        name="phone_num"
+        id="phone_num">
+      </div>
+      
+
+      
+
+      <button id="h1" onclick="displayDetails()">Submit</button>
+
+      <button type="submit" value="cancel">Cancel</button>
+    </form>
+
+    <table id="display">
+        <tr>
+            <th> Fname</th>
+            <th>Lname</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+        </tr>
+
+      
+
+    </table>
+    <script src="script.js">
+    </script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: aqua;
+      }
+      button {
+        background-color: rgb(96, 98, 211);
+        border: 1px solid rgb(219, 136, 136);
+        border-radius: 2px;
+        font-family: inherit;
+        font-size: 50px;
+        display: block;
+        width: 45%;
+        height: 40%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to our website GLAMOUR WORLD</h1>
+
+    <label> ENTER YOUR NAME:</label>
+    <input type="text" placeholder="type your name here" />
+    <br />
+    <label> ENTER YOUR NUMBER: </label>
+    <input type="number" placeholder="type your number here" />
+    <br />
+    <br />
+
+    <br />
+    <button onclick="printOTP()" type="submit" value="VERIFY">VERIFY</button
+    ><br />
+    <h2>
+      Your otp is:
+      <h3 id="output"></h3>
+    </h2>
+    <br />
+    <script src="OTP.js"></script>
+  </body>
+</html>
